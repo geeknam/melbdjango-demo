@@ -71,6 +71,7 @@ class Product(object):
     objects = QuerySet()
 
     def __init__(self, **kwargs):
+        # Python attributes are stored in __dict__
         self.__dict__.update(kwargs)
 
     def __repr__(self):
